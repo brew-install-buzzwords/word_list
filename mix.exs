@@ -8,7 +8,8 @@ defmodule WordList.MixProject do
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      package: package()
+      package: package(),
+      source_url: "https://github.com/brew-install-buzzwords/word_list"
     ]
   end
 
@@ -20,7 +21,7 @@ defmodule WordList.MixProject do
   end
 
   def description() do
-    "Provides a stream of English words."
+    "Provides a stream of English words. Based off of the npm package word-list."
   end
 
   # Run "mix help deps" to learn about dependencies.
@@ -33,7 +34,8 @@ defmodule WordList.MixProject do
 
   defp package() do
     [
-      licenses: ["MIT"]
+      licenses: ["MIT"],
+      links: %{"Github" => "https://github.com/brew-install-buzzwords/word_list"}
     ]
   end
 end
